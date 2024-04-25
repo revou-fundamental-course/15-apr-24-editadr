@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Aplikasi Konversi Suhu</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="content-header">
+                <h3 style="text-align:center">Konversi Suhu </h3>
+            </div>
+            <div class="content-body">
+                <div id="celtofah">
+                    <p>Masukkan suhu derajat Celsius (°C) ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+                    <div id="celsius-form">
+                        <label>Celsius (°C):</label>
+                        <br>
+                        <textarea id="celsius-conv" name="celcius" rows="4" cols="50" required></textarea>
+                        <br>
+                    </div>
+                    
+                    <br>
+
+                    <button class="konversi" id="konversi-celsius" onclick="conversion(this.id)">Konversi</button>
+                    <button class="reset" id="reset" name="reset" onclick="reset()">Reset</button>
+                    <button class="reverse" id="reverse-fahren" onclick="reverse(this.id)">Reverse</button>
+
+                    <br>
+                    
+                    <div id="fahren-form">
+                        <label>Fahrenheit (°F):</label>
+                        <br>
+                        <textarea id="fahren-val" name="fahren" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+                <div id="fahtocel">
+                    <p>Masukkan suhu derajat Celsius (°C) ke kotak di bawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+                    <div id="fahren-form">
+                        <label>Fahrenheit (°F):</label>
+                        <br>
+                        <textarea id="fahren-conv" rows="4" cols="50" required></textarea>
+                    </div>
+
+                    <br>
+
+                    <button class="konversi" id="konversi-fahren" onclick="conversion(this.id)">Konversi</button>
+                    <button class="reset" id="reset" name="reset" onclick="reset()">Reset</button>
+                    <button class="reverse" id="reverse-celsius" onclick="reverse(this.id)">Reverse</button>
+
+                    <br>
+                    
+                    <div id="celsius-form">
+                        <label>Celsius (°C):</label>
+                        <br>
+                        <textarea id="celsius-val" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+
+                <br>
+
+                <div id="kalkulasi-form">
+                    <label>Cara Kalkulasi:</label>
+                    <br>
+                    <textarea id="kalkulasi" name="kalkulasi" rows="4" cols="50"></textarea>
+                </div>
+                <br>
+
+                    <p id="ket" style="font-weight: bold;">Cara Konversi Celsius (°C) ke Fahrenheit (°F)</p>
+                    
+                    <br>
+
+                    <p id="cara-konversi"></p>
+            </div>
+        </div>
+       
+    </div>
+    <script src="js/app.js"></script>
+    </body>
+    
+</html>
